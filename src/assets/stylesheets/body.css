@@ -1,0 +1,32 @@
+
+.body-wrapper{
+    margin: 80px 10px;
+    padding: 30px;
+    /* border: 2px solid grey; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #e4e4e4;
+    /* background-color: var(--bg-color); */
+    flex-wrap: wrap;
+}
+.filtered-by{
+    display: flex;
+   gap: 30px;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid #9cd8f0;
+   background-color: #cce7f1;
+   border-radius: 20px;
+  
+
+}
+.property-listing{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    background-color: #e4e4e4;
+    flex-wrap: wrap;
+
+}

@@ -1,0 +1,25 @@
+.filter-container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 10px 30px;
+    border-radius: 60px;
+    top: 280px;
+    right: 20%;
+    background-color: mintcream;
+    box-shadow: 0px 0px 27px -9px grey
+}
+.filters{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  label{
+    margin-right: 5px;
+  }

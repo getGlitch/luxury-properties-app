@@ -1,0 +1,2 @@
+export const WEBSITE_LOGO='https://www.pngmart.com/files/7/Real-Estate-PNG-Free-Download.png';
+export const WEBSITE_BANNER='https://static.ieplads.com/bmsjs/banners/99acres-hp/1366/1366-vardhman-fairmont-3.jpg';
