@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "kunaldevopsjourney/react-frontend"
-        K8S_GIT_REPO = "git@github.com:getGlitch/your-k8s-repo-name.git"
+        K8S_GIT_REPO = "git@github.com:getGlitch/luxury-properties-k8s-manifests.git"
     }
 
     stages {
@@ -39,8 +39,8 @@ pipeline {
         stage('Update Kubernetes Manifests') {
             steps {
                 sh '''
-                git clone ${K8S_GIT_REPO} k8s-manifests
-                cd k8s-manifests
+                git clone ${K8S_GIT_REPO} manifests
+                cd manifests
                 sed -i "s|image:.*|image: ${DOCKER_IMAGE}:latest|" deployment.yaml
                 git add .
                 git commit -m "Updated image version"
