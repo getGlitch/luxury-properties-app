@@ -40,7 +40,7 @@ pipeline {
             steps {
                 sh '''
                 git clone ${K8S_GIT_REPO} manifests
-                cd manifests/manifests
+                cd K8s-manifests/manifests
                 sed -i "s|image:.*|image: ${DOCKER_IMAGE}:latest|" deployment.yaml
                 git add .
                 git commit -m "Updated image version"
