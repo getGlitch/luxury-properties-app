@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "kunaldevopsjourney/react-frontend"
-        K8S_GIT_REPO = "git@github.com:getGlitch/luxury-properties-k8s-manifests.git"
+        K8S_GIT_REPO = "https://github.com/getGlitch/luxury-properties-k8s-manifests.git"
     }
 
     stages {
