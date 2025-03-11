@@ -10,7 +10,6 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main', url: 'https://github.com/getGlitch/luxury-properties-app.git'
-                git 'https://github.com/getGlitch/luxury-properties-app.git'
             }
         }
 
