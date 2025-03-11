@@ -39,7 +39,7 @@ pipeline {
         stage('Update Kubernetes Manifests') {
             steps {
                 sh '''
-                git clone ${K8S_GIT_REPO} manifests
+                git clone ${K8S_GIT_REPO} K8s-manifests
                 cd K8s-manifests/manifests
                 sed -i "s|image:.*|image: ${DOCKER_IMAGE}:latest|" deployment.yaml
                 git add .
